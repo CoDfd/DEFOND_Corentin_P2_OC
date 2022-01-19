@@ -30,7 +30,7 @@ h3
     font-weight: 600;
     font-size: 100%;
 }
-@media all and (max-width: 768px)
+@media (max-width: 767px)
 {
     * {
         font-size: 100%;
@@ -94,7 +94,7 @@ nav
     color : #0065fc;
     border-top: 3px solid #0065fc;
 }
-@media screen and (max-width: 768px)
+@media (max-width: 767px)
 {
     header
     {
@@ -149,7 +149,7 @@ main
     max-width: 992px;
     margin: auto;
 }
-@media screen and (max-width: 768px)
+@media (max-width: 767px)
 {
     main
     {
@@ -313,7 +313,7 @@ button[type=submit]
     vertical-align: middle;
     font-size: 75%;
 }
-@media screen and (max-width: 768px)
+@media (max-width: 767px)
 {
     #form
     {
@@ -374,7 +374,7 @@ button[type=submit]
     border-radius: 20px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-@media screen and (min-width: 769px)
+@media (min-width: 768px)
 {
     .tuile:hover 
     {
@@ -391,10 +391,13 @@ button[type=submit]
 .tuile_titre
 {
     height: auto;
-    width: 100%;
+    width: 88%;
     font-weight: 600;
     font-size: 90%;
     padding: 0px 5px 0px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .tuile_prix
 {
@@ -425,7 +428,7 @@ button[type=submit]
 }
 #acco h1, #acco h2
 {
-    width : 100%;
+    width : auto;
     height: auto;
     margin-left: 20px;
 }
@@ -515,7 +518,7 @@ button[type=submit]
     margin-top: 20px;
 }
 
-@media screen and (max-width: 768px)
+@media (max-width: 767px)
 {
     #acco
     {
@@ -589,7 +592,7 @@ button[type=submit]
 }
 #activités h1, #activités h2
 {
-    width : 100%;
+    width : auto;
     height: auto;
     margin-left: 20px;
 }
@@ -603,11 +606,13 @@ button[type=submit]
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    overflow: hidden;
 }
 #activités .tuile
 {
     width: 22%;
-    min-width: 170px;
+    min-width: 150px;
     margin: 0px 0px 0px 15px;
 }
 .tuile_container2
@@ -629,11 +634,16 @@ button[type=submit]
 {
     width : 100%;
     height: 35px;
-    padding: 5px 0px 0px 0px;
-    margin-top: 5px;
+    padding: 10px 0px 0px 0px;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
-@media screen and (min-width: 769px)
+#activités .tuile_titre
+{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media (min-width: 768px)
 {
     #activités .tuile:nth-child(1)
     {
@@ -661,7 +671,7 @@ button[type=submit]
     }
 }
 
-@media screen and (max-width: 768px)
+@media (max-width: 767px)
 {
     #container2_tuile
     {
@@ -721,12 +731,11 @@ footer a
     color: black;
 }
 
-@media all and (max-width: 768px)
+@media (max-width: 767px)
 {
     #footer_container
     {
         padding: 0px 0px 0px 20px;
         flex-direction: column;
-    }
-    
+    }   
 }
